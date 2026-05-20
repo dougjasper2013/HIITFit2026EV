@@ -10,7 +10,7 @@ struct ContentView: View {
               Text("Exercise 1")
                   .tabItem { Text("Exercise 1")}
               Text("Exercise 2")
-                  .tabItem { Text("Exercise 3")}
+                  .tabItem { Text("Exercise 2")}
           }
       }
   }
