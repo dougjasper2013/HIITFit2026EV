@@ -6,8 +6,10 @@ struct ContentView: View {
       VStack {
           TabView {
               WelcomeView() // was Text("Welcome!")
-              ExerciseView(index: 0) // was Text("Exercise 1")
-              Text("Exercise 2")
+              ForEach(0 ..< 4)
+              {
+                  index in ExerciseView(index: index)  
+              }
           }
           .tabViewStyle(PageTabViewStyle())
           .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .never))
